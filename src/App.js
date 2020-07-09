@@ -19,7 +19,7 @@ function App() {
       </button>
       <button
         onClick={() => {
-          dispatch(increment());
+          dispatch(increment(5));
         }}
       >
         +
