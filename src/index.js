@@ -3,9 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { createStore } from "redux";
+
+import allReducer from "./reducers/index";
 
 // store Globalized state
-
+const store = createStore(allReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 // action   "this is like saying that I am hungry, butn not doing anything yet"
 // function that returns an object
 
