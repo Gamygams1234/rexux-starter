@@ -3,10 +3,22 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { createStore } from "redux";
 
 // store Globalized state
 
-// action
+// action   "this is like saying that I am hungry, butn not doing anything yet"
+// function that returns an object
+
+const increment = () => {
+  return {
+    type: "INCREMENT",
+  };
+};
+
+// reducer
+
+// dispatch
 ReactDOM.render(
   <React.StrictMode>
     <App />
